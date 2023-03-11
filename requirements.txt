@@ -1,3 +1,4 @@
 uvicorn==0.18.2
 fastapi==0.94.0
 pickleshare==0.7.5
+jinja2==2.11.3
