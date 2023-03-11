@@ -2,11 +2,13 @@ from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
 import pickle
 
+from pathlib import Path
+
 from fastapi.templating import Jinja2Templates
 
 
-
-templates = Jinja2Templates(directory="templates")
+MAIN_DIR_PATH = Path(__file__).parent
+templates = Jinja2Templates(directory=MAIN_DIR_PATH.joinpath('templates'))
 
 
 app = FastAPI()
